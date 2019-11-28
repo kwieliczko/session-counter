@@ -21,7 +21,7 @@ It also defines the maximum and minimum number of connections and for each numbe
 
 In the current directory, he assumes an Excel file with the name consistent with the name of the database in which he places the calculated data.
 
-### Example Excel file:
+#### Example Excel file:
 
 ![Example Excel](https://github.com/kwieliczko/session-counter/blob/master/sale.jpg "Example Excel")
 
