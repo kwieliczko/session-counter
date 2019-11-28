@@ -64,8 +64,6 @@ class main(functions.GeneralFunctions):
         # From the dba_hist_snapshot View, I create a list containing the last 7 days 
 		# of call history along with dates, snapshot times and the number of calls in a given hour
         #
-        #  w stylu:
-        #
         #        Date       hour        the number of calls in a given hour
         #        2019-11-18 00:00:00    94
         #        2019-11-18 01:00:00    93
