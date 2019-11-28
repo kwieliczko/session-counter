@@ -72,8 +72,8 @@ class main(functions.GeneralFunctions):
         count_connection_per_hour_tab = db.get_count_connection_per_hour_from_db(conn_db)
 
 
-		# I am creating a temporary list containing only the number of calls in specific hours 
-		# to check what is the max and what is the min
+	# I am creating a temporary list containing only the number of calls in specific hours 
+	# to check what is the max and what is the min
         # (it's about choosing the brightness of the color)
         
         connections_count_tab = []
