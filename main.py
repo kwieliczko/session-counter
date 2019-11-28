@@ -133,8 +133,8 @@ class main(functions.GeneralFunctions):
             
             sheet[''+ chr(ord(''+ sheet_start +'') + 1) +''+str(excel_row)] = int(row[1])     # Number of calls
             
-            foreground_cell_color = functions.GeneralFunctions.choose_color(row[1], min_connenctions, max_connenctions)     # Dobieram kolor wypelnienia
-            sheet[''+ chr(ord(''+ sheet_start +'') + 1) +''+str(excel_row)].fill = PatternFill(fgColor=foreground_cell_color, fill_type = "solid")     # Koloruje pole w Excelu
+            foreground_cell_color = functions.GeneralFunctions.choose_color(row[1], min_connenctions, max_connenctions)     
+            sheet[''+ chr(ord(''+ sheet_start +'') + 1) +''+str(excel_row)].fill = PatternFill(fgColor=foreground_cell_color, fill_type = "solid")   
             
             excel_row = excel_row + 1
             hour = hour + 1
