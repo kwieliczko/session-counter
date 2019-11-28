@@ -115,7 +115,7 @@ class main(functions.GeneralFunctions):
                 
                 # Header 
                 sheet[''+ chr(ord(''+ sheet_start +'' ) + 2 ) +'1'] = thisWeekDayAsString
-                sheet[''+ chr(ord(''+ sheet_start +'')  + 2 ) +'1'].fill = PatternFill(fgColor='999999', fill_type = "solid")     # Koloruje polenaglowka
+                sheet[''+ chr(ord(''+ sheet_start +'')  + 2 ) +'1'].fill = PatternFill(fgColor='999999', fill_type = "solid")     
 
                 # Increase letter and column by 1
                 sheet_start = chr(ord(sheet_start) + 1)
