@@ -14,7 +14,6 @@ import argparse
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill
 import datetime
-#from scipy.constants.constants import year
 import argparse
 
 
@@ -43,7 +42,7 @@ class main(functions.GeneralFunctions):
         db = db_oracle.DbOracle()
 
         # Connection to the main database of the program based on parameters from the 
-		# 'cfg\config.py' file to download the connection string of the tested database
+	# 'cfg\config.py' file to download the connection string of the tested database
         conn_main = db.db_connect(config.Config().host_name, 
                                   config.Config().db_port, 
                                   config.Config().db_service_name, 
@@ -62,7 +61,7 @@ class main(functions.GeneralFunctions):
         
         
         # From the dba_hist_snapshot View, I create a list containing the last 7 days 
-		# of call history along with dates, snapshot times and the number of calls in a given hour
+	# of call history along with dates, snapshot times and the number of calls in a given hour
         #
         #        Date       hour        the number of calls in a given hour
         #        2019-11-18 00:00:00    94
