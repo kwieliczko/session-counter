@@ -1,5 +1,5 @@
 
-# Klasa konfiguracji do polaczenia z baza glowna programu
+# Configuration class to be connected to the main program base
 
 class Config:
       host_name = 'dbhost099.domain.com'
