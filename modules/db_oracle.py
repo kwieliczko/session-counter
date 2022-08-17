@@ -3,13 +3,9 @@ from modules import functions
 import inspect
 
 # An Oracle class of operations inheriting from GeneralFunctions
-
 class DbOracle(functions.GeneralFunctions):
-    
-    # Polaczenie do bazy Oracle
-    
+    # Connection to the Oracle database    
     def db_connect(self,host_name, db_port, db_service_name, db_user, db_password):
-        
         try:
             dsn_tns = cx_Oracle.makedsn(host_name, db_port, db_service_name)
             conn=cx_Oracle.connect(user=db_user, password=db_password, dsn=dsn_tns)
@@ -17,39 +13,22 @@ class DbOracle(functions.GeneralFunctions):
         except:
             c = ""
             self.print_error("Failed to connect to the database in db_connect. Base:", db_service_name)
-        
         return c
     
-
-
-
-
     # Sending a query to the database
-    
     def get_query_result(self, con ,query, number_of_columns):
-        
         try:
-             
-        
             con.execute('alter session set NLS_COMP=LINGUISTIC')
             con.execute('alter session set NLS_SORT=BINARY_CI')
             con.execute(query)
             for row in con:
-                return row[:number_of_columns]
-            
+                return row[:number_of_columns]         
         except:
             self.print_error("Select failed in get_query_result: ", query)
             return '0'
             pass
-            
-            
-            
 
-
-    
-        
     def get_count_connection_per_hour_from_db(self, con):
-             
         try:
             con.execute(""" 
                             SELECT
@@ -92,7 +71,4 @@ class DbOracle(functions.GeneralFunctions):
         except:
             self.print_error("Select failed in get_count_connection_per_hour_from_db")
     
-   
-
-            
-        
+     
