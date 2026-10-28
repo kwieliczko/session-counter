@@ -25,5 +25,5 @@ In the current directory, he assumes an Excel file with the name consistent with
 
 #### Example Excel file:
 
-![Example Excel](https://github.com/kwieliczko/session-counter/blob/master/sale.jpg "Example Excel")
+![Example Excel](https://github.com/kwieliczko/session-counter/blob/main/sale.jpg "Example Excel")
 
