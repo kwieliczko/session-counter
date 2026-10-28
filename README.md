@@ -1,7 +1,7 @@
 # session-counter
 ### "Session Counter" - a program that helps determine estimated base loads at different times of the day and thus find the best time for a service window.
 
-**IMPORTANT: This program uses Oracle Automatic Workload Repository (AWR) data, which requires an Oracle Diagnostics Pack license. Ensure that your Oracle Database environment is properly licensed before using this program.**
+**IMPORTANT**: This program uses Oracle Automatic Workload Repository (AWR) data, which requires an Oracle Diagnostics Pack license. Ensure that your Oracle Database environment is properly licensed before using this program.
 
 First, set up a set of tables using the queries available in the .sql file
 
